@@ -7,14 +7,15 @@ Terrraform module to release helm charts
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_helm"></a> [helm](#requirement\_helm) | 2.2.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 3.62.0 |
+| <a name="requirement_helm"></a> [helm](#requirement\_helm) | 2.3.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
-| <a name="provider_helm"></a> [helm](#provider\_helm) | 2.2.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.62.0 |
+| <a name="provider_helm"></a> [helm](#provider\_helm) | 2.3.0 |
 
 ## Modules
 
@@ -24,9 +25,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [helm_release.this](https://registry.terraform.io/providers/hashicorp/helm/2.2.0/docs/resources/release) | resource |
-| [aws_eks_cluster.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/eks_cluster) | data source |
-| [aws_eks_cluster_auth.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/eks_cluster_auth) | data source |
+| [helm_release.this](https://registry.terraform.io/providers/hashicorp/helm/2.3.0/docs/resources/release) | resource |
+| [aws_eks_cluster.this](https://registry.terraform.io/providers/hashicorp/aws/3.62.0/docs/data-sources/eks_cluster) | data source |
+| [aws_eks_cluster_auth.this](https://registry.terraform.io/providers/hashicorp/aws/3.62.0/docs/data-sources/eks_cluster_auth) | data source |
 
 ## Inputs
 
@@ -37,4 +38,6 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_release_status"></a> [release\_status](#output\_release\_status) | Block status of the deployed release |
