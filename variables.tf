@@ -15,6 +15,7 @@ variable "charts" {
         release_name             = string
         repository_url           = string
         timeout                  = number
+        values                   = list(any)
         set = list(
           object(
             {
