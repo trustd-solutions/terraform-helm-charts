@@ -3,18 +3,18 @@ variable "charts" {
   type = map(
     object(
       {
-        atomic                   = bool
-        chart_name               = string
-        chart_override_file_path = string
-        chart_version            = string
-        cleanup_on_fail          = bool
-        force_update             = bool
-        max_history              = number
-        namespace                = string
-        recreate_pods            = bool
-        release_name             = string
-        repository_url           = string
-        timeout                  = number
+        atomic                    = bool
+        chart_name                = string
+        chart_overrides_file_path = string
+        chart_version             = string
+        cleanup_on_fail           = bool
+        force_update              = bool
+        max_history               = number
+        namespace                 = string
+        recreate_pods             = bool
+        release_name              = string
+        repository_url            = string
+        timeout                   = number
         set = list(
           object(
             {
